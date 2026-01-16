@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // 3. Email Function (Fixed logic from before)
-function sendMail() {
+function sendMail(event) {
+    event.preventDefault();
     let parms = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
@@ -30,7 +31,7 @@ function sendMail() {
 
     if(parms.name && parms.email) {
         emailjs.send("service_n4n5kba", "template_81gvfzi", parms)
-            .then(() => alert("Message Sent!"))
+            .then(() => alert("successful"))
             .catch((err) => alert("Send Error: " + err));
     } else {
         alert("Please fill in Name and Email");
