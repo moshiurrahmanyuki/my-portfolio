@@ -86,6 +86,9 @@ body{
     color: var(--text-bg-color);
     cursor: pointer;
     display: none;
+    background: none;
+    border: none;
+    outline: none;
  }
 
  section{
@@ -177,7 +180,7 @@ body{
     display: flex;
     justify-content: space-between;
     width: 34.5rem;
-    height: 5rem; 
+    height: 5rem;
  }
  
  .btn-box .btn {
@@ -984,58 +987,87 @@ span{
 }
 
 @media (max-width: 768px) {
+    .header {
+        background: var(--bg-color);
+        padding: 2rem 3%;
+    }
+
     #menu-icon {
-        display: block;
+        display: block; /* Shows the hamburger icon */
+        z-index: 1001;
     }
 
     .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: var(--second-bg-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        transition: 0.5s ease;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+        z-index: 1000;
     }
 
+    /* When the menu is toggled active */
     .navbar.active {
-        display: block;
+        right: 0;
     }
 
     .navbar a {
         display: block;
         font-size: 2rem;
-        margin: 3rem 0;
+        margin: 1.5rem 0;
+        color: var(--text-bg-color);
+        text-decoration: none;
+        font-weight: 500;
+        text-align: center;
+        transition: 0.3s;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .navbar a:hover {
+        color: var(--main-color);
+        background: rgba(255, 255, 255, 0.1);
+        transform: scale(1.05);
+    }
+
+    .contact form .input-box .input-field {
+        width: 100%;
+    }
+
+    .home {
+        flex-direction: column-reverse; /* Image on top, text below for mobile */
+        justify-content: center;
+        padding-top: 15rem;
+    }
+
+    .home-imgHover .img-box {
+        width: 70vw;
+        height: 70vw;
     }
 
     .home-content h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .home-content .text-animate {
         width: 100%;
     }
 
-    .home-content .text-animate h3 {
-        font-size: 2.5rem;
-    }
-
     .btn-box {
         width: 100%;
-        flex-direction: column;
-        height: auto;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     .btn-box .btn {
-        width: 100%;
-    }
-
-    .home-imgHover .img-box {
-        width: 60vw;
-        height: 60vw;
+        width: 100%; /* Full width buttons for easy thumb clicking */
     }
 
     .about-img {
@@ -1125,5 +1157,13 @@ span{
 
     .footer-text p {
         font-size: 1.5rem;
+    }
+}
+
+/* Fix for very small screens */
+@media (max-width: 450px) {
+    html { font-size: 50%; }
+    .education-row, .skills-row {
+        padding: 0;
     }
 }
