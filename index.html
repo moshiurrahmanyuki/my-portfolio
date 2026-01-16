@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" >
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "MnQXFI4PuYBcznJ5a",
+        });
+    })();
+    </script>
+
+    <script src="script.js"></script>
+
+
+</head>
+<body>
+    <!-- header design -->
+     <header class="header">
+        <!-- <a href="#" class="logo">SHARIF.</a> -->
+        <a href="#" class="logo">
+            <img src="Images/yukilogo.png" alt="">
+        </a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+
+     <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+
+
+     </nav>
+
+     <div class="bars-animations">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+     </div>
+     </header>
+
+     <!-- home section design  -->
+      <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>MD. Moshiur Rahman</span></h1>
+            <div class="text-animate">
+                <h3>I'm a <span style="--i:4;" date-text=" Frontend Developer"> Frontend Developer</span>
+                    <span style="--i:3;" date-text="Spring Boot Developer">Spring Boot Developer</span>
+                    <span style="--i:2;" date-text="Blogger">Blogger</span>
+                    <span style="--i:1;" date-text="Designer">Designer</span>
+                    
+                </h3>
+
+            </div>
+            <p>
+                I'm a passionate and dedicated Spring Boot Developer, specializing in backend development, API design, and microservices architecture. With a deep understanding of both frontend and backend technologies, I aim to build high-performance and scalable web applications.
+            </p>
+
+            <div class="btn-box">
+                <a href="#" class="btn">Hire me</a>
+                <a href="#" class="btn">Let's Talk</a>
+            </div>
+        </div>
+            <div class="home-sci">
+                <a href="https://www.facebook.com/moshiurrahmanyuki"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://x.com"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/moshiurrahmanyuki/"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+
+            <div class="home-imgHover">
+                <div class="img-box">
+                    <div class="img-item">
+                        <img src="Images/yukiown.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+      </section>
+
+      <!-- about section design -->
+
+      <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-img">
+            <img src="Images/yukiown.jpg" alt="">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <h3>Spring Boot Developer!</h3>
+            <p>I am a passionate and dedicated Java Developer with a strong enthusiasm for coding and problem-solving. 
+                My expertise lies in crafting efficient, scalable, and innovative backend solutions that enhance application 
+                performance and streamline operations. With a keen interest in software development, I continuously explore new technologies to stay ahead in the ever-evolving tech landscape.
+                My journey in programming began with a deep curiosity about how things work behind the scenes,
+                leading me to master various backend technologies and frameworks.
+                I thrive in collaborative environments, always eager to contribute my skills and learn from others.
+                As a Spring Boot Developer, I specialize in designing and developing robust, maintainable, and high-performance applications. 
+                I am particularly focused on microservices architecture, API development, and backend optimization. 
+                Whether working on a solo project or as part of a team,
+                I am committed to delivering high-quality results that meet user needs and business goals.
+                I am always open to new opportunities and challenges that push my boundaries and help me grow as a developer. 
+                Let's connect and build something amazing together!
+                </p>
+            <div class="btn-box btns">
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+      </section>
+
+        <!-- Education section design -->
+
+        <section class="education" id="education">
+            <h2 class="heading">My <span>Journey</span></h2>
+            
+            <div class="education-row">
+                <div class="education-column">
+                    <h3 class="title">Education</h3>
+
+
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year">
+                                    <i class='bx bxs-calendar'></i>
+                                    2022-2026
+                                </div>
+                                <h3>Bsc in CSE Degree - SouthEast University</h3>
+                                <p>
+                                    Pursuing a Bachelor of Science in Computer Science and Engineering at SouthEast University. 
+                                    Gaining expertise in programming, data structures, algorithms, software development, and emerging technologies 
+                                    while working on projects and real-world applications.
+                                </p>
+                        
+                            
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year">
+                                    <i class='bx bxs-calendar'></i>
+                                    2017-2019
+                                </div>
+                                <h3>HSC - YMCA Public School & College, Bogura</h3>
+                                <p>
+                                    Completed Higher Secondary Certificate (HSC) with a strong academic foundation, focusing on key subjects and extracurricular activities. 
+                                    Gained valuable knowledge and skills that contributed to personal and academic growth.
+                                </p>                            
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year">
+                                    <i class='bx bxs-calendar'></i>
+                                    2012-2017
+                                </div>
+                                <h3>SSC - Shabrul High School, Bogura</h3>
+                                <p>
+                                    Successfully completed the Secondary School Certificate (SSC) with a strong academic record. 
+                                    Gained a solid foundation in various subjects, participated in extracurricular activities, and developed essential skills for future studies.
+                                </p>                            
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="education-column">
+                    <h3 class="title">Experience</h3>
+
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year">
+                                    <i class='bx bxs-calendar'></i>
+                                    2022-Running
+                                </div>
+                                <h3>Web Developer - FieldBooster Limited</h3>
+                                <p>
+                                    Working on developing and maintaining responsive websites, ensuring high performance and user-friendly interfaces. 
+                                    Collaborated with cross-functional teams to implement modern web technologies, optimize code efficiency, 
+                                    and enhance overall user experience.
+                                </p>                            
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year">
+                                    <i class='bx bxs-calendar'></i>
+                                    2022-Running
+                                </div>
+                                <h3>Executive & Accounts - FieldBooster Limited</h3>
+                                <p>
+                                    Working on Executive & Accounts, ensuring high accuracy and smooth operations. 
+                                    Collaborated with functional accountaility. Handling company billing system
+                                    & many more systems.
+                                </p>                            
+                            </div>
+                        </div>
+
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year">
+                                    <i class='bx bxs-calendar'></i>
+                                    2021-2022
+                                </div>
+                                <h3>Web Developer - IECL</h3>
+                                <p>
+                                    Worked on intern base developing and maintaining responsive websites, ensuring high performance and user-friendly interfaces. 
+                                    Collaborated with cross-functional teams to implement modern web technologies, optimize code efficiency, 
+                                    and enhance overall user experience.
+                                </p>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Skills section design -->
+
+        <section class="skills" id="skills">
+            <h2 class="heading">My <span>Skills</span></h2>
+
+            <div class="skills-row">
+                <div class="skills-column">
+                    <h3 class="title">Coding Skills</h3>
+
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>HTML <span> 50%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>CSS <span> 50%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>JavaScript <span> 20%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Spring Bootstep <span> 0.5%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Python <span> 10%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="skills-column">
+                    <h3 class="title">Professional Skills</h3>
+
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>Future Web Design <span> 100%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Future Web Developer <span> 100%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Graphic Design <span> 20%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            
+                            <div class="progress">
+                                <h3>SEO Marketing <span> 20%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Accounts <span> 100%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section Design -->
+
+
+        <section class="projects" id="projects">
+            <h2 class="heading title">WHAT I WILL DO FOR YOU</h2>
+            <h2 class="heading">Latest <span>Projects</span></h2>
+
+            <div class="container">
+                <div class="fillter-buttons">
+                    <button class="btn">All</button>
+                    <button class="btn">Desktop Application</button>
+                    <button class="btn">Web Application</button>
+
+                </div>
+
+                <div class="project-gallery">
+                    <div class="port-box">
+                        <div class="port-image">
+                            <img src="Images/22222.png" alt="">
+                        </div>
+                        <div class="port-content">
+                            <h1>Ecommerce Website</h1>
+                            <p>
+                                A fully responsive and user-friendly ecommerce website featuring secure payment integration, product management, and a seamless shopping experience. Built with modern web technologies to enhance performance and usability.
+
+                            </p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="port-box">
+                        <div class="port-image">
+                            <img src="Images/33333.png" alt="">
+                        </div>
+                        <div class="port-content">
+                            <h1>Social Media Service</h1>
+                            <p>
+                                A modern social media platform designed to connect people, share updates, and engage with communities. Features include real-time messaging, multimedia sharing, and a user-friendly interface.
+
+                            </p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="port-box">
+                        <div class="port-image">
+                            <img src="Images/project (3).png" alt="">
+                        </div>
+                        <div class="port-content">
+                            <h1>X-O Battle</h1>
+                            <p>
+                                X-O Battle is a fun and interactive Tic-Tac-Toe game where players can compete against each other or an AI opponent. 
+                                Designed with a sleek UI and smooth gameplay, it offers a classic yet engaging experience for all ages.
+                            </p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="port-box">
+                        <div class="port-image">
+                            <img src="Images/11111.png" alt="">
+                        </div>
+                        <div class="port-content">
+                            <h1>Graphic Design</h1>
+                            <p>
+                                A comprehensive program covering visual communication, branding, UI/UX design, and digital illustration. 
+                                Focuses on mastering design principles, industry-standard software, and creative problem-solving.
+                            </p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+
+                   
+                    
+                </div>
+                 
+            </div>
+        </section>
+
+        <!-- Contact Section Design -->
+
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+
+            <form action="">
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" id="name" placeholder="Full Name" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="email" placeholder="Email Address" required>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="number" id="mobileNumber" placeholder="Mobile Number" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="subject" placeholder="Email Subject" required>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+
+                <div class="textarea-field">
+                    <textarea name="" id="text" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <span class="focus"></span>
+                </div>
+
+                <div class="btn-box btns">
+                    <button type="submit" onclick="sendMail()" class="btn">Submit</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Footer Design -->
+         <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2026 by Md. Moshiur Rahman | All Rights Reserved. </p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#"><i class='bx bx-up-arrow-alt' ></i></a>
+            </div>
+         </footer>
+
+
+         
+</body>
+</html>
