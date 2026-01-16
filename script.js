@@ -31,7 +31,7 @@ function sendMail(event) {
 
     if(parms.name && parms.email) {
         emailjs.send("service_n4n5kba", "template_81gvfzi", parms)
-            .then(() => alert("successful"))
+            .then(() => alert("Mail Sent successful"))
             .catch((err) => alert("Send Error: " + err));
     } else {
         alert("Please fill in Name and Email");
