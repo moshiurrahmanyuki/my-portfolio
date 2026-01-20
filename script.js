@@ -31,7 +31,15 @@ function sendMail(event) {
 
     if(parms.name && parms.email) {
         emailjs.send("service_n4n5kba", "template_81gvfzi", parms)
-            .then(() => alert("Mail Sent successful"))
+            .then(() => {
+                alert("Mail Sent successful");
+                // Clear the form fields
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("mobileNumber").value = "";
+                document.getElementById("subject").value = "";
+                document.getElementById("text").value = "";
+            })
             .catch((err) => alert("Send Error: " + err));
     } else {
         alert("Please fill in Name and Email");
